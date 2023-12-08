@@ -1,0 +1,20 @@
+#
+
+[GLOBAL]
+pants_version = "2.18.1"
+
+backend_packages = [
+  "pants.backend.experimental.go"
+]
+
+
+[anonymous-telemetry]
+enabled = false
+
+##### Golang Backends #####
+[golang]
+minimum_expected_version = "1.21"
+subprocess_env_vars = [ 
+    "HOME", 
+    "PATH" 
+]
